@@ -1,4 +1,4 @@
-# Order Export With Products
+# Additional customer and order exports
 
 This module defines 3 new exports :
 
