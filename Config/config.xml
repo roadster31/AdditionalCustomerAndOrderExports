@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns="http://thelia.net/schema/dic/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+
+    <exports>
+        <export id="additionalcustomerandorderexports.export.essential" category_id="thelia.export.customer" class="AdditionalCustomerAndOrderExports\Export\SimpleCustomerExport">
+            <export_descriptive locale="fr_FR">
+                <title>Liste simple des clients</title>
+                <description>Exporter les informations essentielles à propos de vos clients</description>
+            </export_descriptive>
+            <export_descriptive locale="en_US">
+                <title>Simple customers list</title>
+                <description>Export essential information about your customers</description>
+            </export_descriptive>
+        </export>
+
+        <export id="additionalcustomerandorderexports.export.adresses" category_id="thelia.export.customer" class="AdditionalCustomerAndOrderExports\Export\SimpleCustomerExportWithAddress">
+            <export_descriptive locale="fr_FR">
+                <title>Liste simple des clients avec leur adresse</title>
+                <description>Exporter les informations essentielles à propos de vos clients, avec leur adresse</description>
+            </export_descriptive>
+            <export_descriptive locale="en_US">
+                <title>Simple customers list with address</title>
+                <description>Export essential information about your customers, with their address</description>
+            </export_descriptive>
+        </export>
+
+        <export id="additionalcustomerandorderexports.export.orders" category_id="thelia.export.orders" class="AdditionalCustomerAndOrderExports\Export\OrderExport">
+            <export_descriptive locale="fr_FR">
+                <title>Commandes avec les produits</title>
+                <description>Exporter les commandes avec les produits commandés</description>
+            </export_descriptive>
+            <export_descriptive locale="en_US">
+                <title>Orders with products</title>
+                <description>Export orders with the ordered products</description>
+            </export_descriptive>
+        </export>
+    </exports>
+</config>
